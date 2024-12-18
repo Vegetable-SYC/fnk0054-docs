@@ -178,5 +178,3 @@ Release the GPIO resource each time you use Ctrl+C to exit the code.
     finally:
         led.close()
         button.close()
-
-

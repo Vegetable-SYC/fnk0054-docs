@@ -1,10 +1,10 @@
 ######################################################
-FNK00xx
+Freenove Projects Kit for Raspberry Pi
 ######################################################
 
 .. toctree::
    :maxdepth: 1
-   :caption: FNK00xx
+   :caption: FNK0054
    :glob:
 
    fnk0054/fnk0054.rst
