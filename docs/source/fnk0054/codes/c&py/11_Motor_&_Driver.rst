@@ -116,3 +116,57 @@ The following is the code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/11_Motor/Motor.cpp
     :linenos: 
     :language: c
+
+When ADC value is greater than 128, motorPin2 outputs low lever and motorPin1 output high level.
+
+When ADC value is less than 128, motorPin2 outputs high lever and motorPin1 output low level.
+
+The difference between ADC and 128 determines the duty cycle for the PWM.
+
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/11_Motor/Motor.cpp
+    :linenos: 
+    :language: c
+    :lines: 24-43
+
+Python Code 11.1 Motor
+----------------------------------------------------------------
+
+If you haven't configured I2C and installed Smbus, please refer to Chapter 7. If you've done it, please Continue.
+
+First, observe the project result, and then learn about the code in detail.
+
+If you have any concerns, please send an email to: support@freenove.com
+
+1.	Use cd command to enter 11_Motor directory of Python code.
+
+.. code-block:: console
+
+    $ cd ~/Freenove_Kit/Code/Python_GPIOZero_Code/11_Motor
+
+2.	Use python command to execute the Python code “Motor.py”. 
+
+.. code-block:: console
+
+    $ python Motor.py
+
+After the program runs, you can use the Potentiometer to control the DC Motor. When the Potentiometer is at the midpoint position, the DC Motor will STOP, and when the Potentiometer is turned in either direction of this midpoint, the DC Motor speed increases until it reaches the endpoint where the DC Motor achieves its maximum speed. When the Potentiometer is turned “Left” of the midpoint, the DC Motor will ROTATE in one direction and when turned “Right” the DC Motor will ROTATE in the opposite direction. You will also see the ADC value of the potentiometer displayed in the Terminal with the motor direction and the PWM duty cycle used to control the DC Motor’s speed.
+
+.. image:: ../_static/imgs/11_Motor_&_Driver/Chapter11_07.png
+    :align: center
+
+The following is the code:
+
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/11_Motor/Motor.py
+    :linenos: 
+    :language: python
+
+When ADC value is greater than 128, motorPin2 outputs low lever and motorPin1 output high level.
+
+When ADC value is less than 128, motorPin2 outputs high lever and motorPin1 output low level.
+
+The difference between ADC and 128 determines the duty cycle for the PWM.
+
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/11_Motor/Motor.py
+    :linenos: 
+    :language: python
+    :lines: 31-44

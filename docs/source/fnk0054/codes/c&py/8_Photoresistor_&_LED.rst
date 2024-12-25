@@ -32,7 +32,6 @@ Component List
 .. |Chapter05_02| image:: ../_static/imgs/5_RGB_LED/Chapter05_02.png
 .. |Chapter08_00| image:: ../_static/imgs/8_Photoresistor_&_LED/Chapter08_00.png
 
-
 Circuit
 ================================================================
 
