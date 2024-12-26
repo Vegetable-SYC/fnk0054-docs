@@ -77,3 +77,134 @@ Component List
 .. |Chapter01_06| image:: ../_static/imgs/1_LED/Chapter01_06.png
 .. |Chapter05_02| image:: ../_static/imgs/5_RGB_LED/Chapter05_02.png
 .. |Chapter22_00| image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_00.png
+
+Circuit
+================================================================
+
+.. list-table:: 
+    :width: 100%
+    :align: center
+    :class: product-table
+
+    *   -   Schematic diagram
+    *   -   |Chapter22_03|
+    *   -   Hardware connection:
+    *   -   |Chapter22_04|
+
+.. |Chapter22_03| image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_03.png
+.. |Chapter22_04| image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_04.png
+
+.. note::
+    
+    :red:`If you have any concerns, please send an email to:` support@freenove.com
+
+**How to use this sensor?**
+
+.. list-table:: 
+    :width: 100%
+    :align: center
+    :class: product-table
+
+    *   -   Top
+        -   Bottom 
+    
+    *   -   |Chapter22_00|
+        -   |Chapter22_01|
+
+Description: 
+
+1.	You can choose non-repeatable trigger modes or repeatable modes.
+
+L: non-repeatable trigger mode. The module outputs high level after sensing a body, then when the delay time is over, the module will output low level. During high level time, the sensor no longer actively senses bodies.  
+
+H: repeatable trigger mode. The distinction from the L mode is that it can sense a body until that body leaves. After this, it starts to time and output low level after delaying T time.
+
+2.	R1 is used to adjust HIGH level lasting time when sensor detects human motion, 1.2s-320s.
+
+3.	R2 is used to adjust the maxmum distance the sensor can detect, 3~5m.
+
+:red:`Here we connect L and adjust R1 and R2 like below to do this project.`
+
+:red:`Put you hand close and away from the sensor slowly. Obsever the LED in previous circuit.`
+
+:red:`It need some time between two detections.`
+
+.. image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_05.png
+    :align: center
+
+.. note::
+    
+    :red:`If you have any concerns, please send an email to:` support@freenove.com
+
+Code
+================================================================
+
+In this project, we will use the Infrared Motion Sensor to trigger an LED, essentially making the Infrared Motion sensor act as a Motion Switch. Therefore, the code is very similar to the earlier project "Push Button Switch and LED”. The difference is that, when Infrared Motion Sensor detects change, it will output high level; when button is pressed, it will output low level. When the sensor output high level, the LED turns ON, or it will turn OFF.
+
+C Code 22.1 SenseLED
+----------------------------------------------------------------
+
+First, observe the project result, and then learn about the code in detail.
+
+.. note::
+    
+    :red:`If you have any concerns, please send an email to:` support@freenove.com
+
+1.	Use cd command to enter 22_1_InfraredSensor directory of C code.
+
+.. code-block:: console
+
+    $ cd ~/Freenove_Kit/Code/C_Code/22_1_InfraredSensor
+
+2.	Use following command to compile "SenseLED.c" and generate executable file "SenseLED".
+
+.. code-block:: console
+
+    $ gcc SenseLED.c -o SenseLED -lwiringPi
+
+3.	Run the generated file "SenseLED".
+
+.. code-block:: console
+
+    $ ./SenseLED
+
+After the program runs, wait 1 minute for initialization. Then move away from or move closer to the Infrared Motion Sensor and observe whether the LED turns ON or OFF. The Terminal window will continuously display the state of LED. As is shown below:
+
+.. image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_06.png
+    :align: center
+
+The following is the program code:
+
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/22_1_InfraredSensor/SenseLED.c
+    :linenos: 
+    :language: c
+
+Python Code 22.1 SenseLED
+----------------------------------------------------------------
+
+First, observe the project result, and then learn about the code in detail.
+
+If you have any concerns, please send an email to: support@freenove.com
+
+1.	Use cd command to enter 22_InfraredSensor directory of Python code.
+
+.. code-block:: console
+
+    $ cd ~/Freenove_Kit/Code/Python_GPIOZero_Code/22_InfraredSensor
+
+2.	Use Python command to execute code "SenseLED.py".
+
+.. code-block:: console
+
+    $ python SenseLED.py
+
+After the program runs, :red:`wait 1 minute for initialization`. Then move away from or move closer to the Infrared Motion Sensor and observe whether the LED turns ON or OFF. The Terminal window will continuously display the state of LED. As is shown below:
+
+.. image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_07.png
+    :align: center
+
+The following is the program code:
+
+.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/22_InfraredSensor/SenseLED.py
+    :linenos: 
+    :language: python
