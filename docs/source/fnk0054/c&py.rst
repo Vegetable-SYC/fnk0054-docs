@@ -53,10 +53,9 @@ C & Python language
    codes/c&py/23_Ultrasonic_Ranging.rst
    codes/c&py/24_Attitude_Sensor_MPU6050.rst
    codes/c&py/25_RFID.rst
-   codes/c&py/What_s_Next.rst
 
 .. toctree::
    :titlesonly:
-   :caption: what_s_next
+   :caption: What's Next?
 
-   codes/c&py/WhatsNext.rst
+   codes/c&py/What_s_Next.rst

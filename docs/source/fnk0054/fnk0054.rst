@@ -9,3 +9,4 @@ Select the language you want to use.
    :titlesonly:
     
    c&py.rst
+   Pi4j.rst

@@ -77,20 +77,17 @@ Circuit
 
 .. list-table:: 
     :width: 100%
-    :widths: 50 50
     :align: center
     :class: product-table
 
     *   -   Schematic diagram
-        -   |Chapter01_07|
-
+    *   -   |Chapter01_07|
     *   -   Hardware connection:
 
             Turn ON the power switch and NO.5 toggle switch. 
 
             Power switch should be turned ON in all the projects.
-
-        -   |Chapter01_08|
+    *   -   |Chapter01_08|
 
 .. |Chapter01_07| image:: ../_static/imgs/1_LED/Chapter01_07.png
 .. |Chapter01_08| image:: ../_static/imgs/1_LED/Chapter01_08.png
