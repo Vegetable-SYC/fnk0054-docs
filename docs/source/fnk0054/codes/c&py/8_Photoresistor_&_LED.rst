@@ -21,7 +21,7 @@ Component List
 |                     |                    |
 |  |Chapter01_05|     |  |Chapter01_06|    |
 +---------------------+--------------------+
-| Jumper Wire         | RGBLED Module      |
+| Jumper Wire         | Photoresistor      |
 |                     |                    |
 |  |Chapter05_02|     |  |Chapter08_00|    |
 +---------------------+--------------------+
@@ -93,6 +93,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/8_Nightlamp/Nightlamp.cpp
     :linenos: 
     :language: c
+    :dedent:
 
 Python Code 8.1 Nightlamp
 ----------------------------------------------------------------
@@ -122,3 +123,4 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/8_Nightlamp/Nightlamp.py
     :linenos: 
     :language: python
+    :dedent:

@@ -21,7 +21,7 @@ Component List
 |                     |                    |
 |  |Chapter01_05|     |  |Chapter01_06|    |
 +---------------------+--------------------+
-| Jumper Wire         | RGBLED Module      |
+| Jumper Wire         | Photoresistor      |
 |                     |                    |
 |  |Chapter05_02|     |  |Chapter08_00|    |
 +---------------------+--------------------+
@@ -111,6 +111,7 @@ The following is program code:
 .. literalinclude:: ../../../freenove_Kit/Pi4j/Sketches/Sketch_08_Nightlamp/Nightlamp.java
     :linenos: 
     :language: java
+    :dedent:
 
 The ADC value at the photosensor is obtained every 100 milliseconds, converted into a PWM duty cycle value for controlling the LED, and then a prompt message is printed on the terminal.
 
@@ -118,3 +119,4 @@ The ADC value at the photosensor is obtained every 100 milliseconds, converted i
     :linenos: 
     :language: java
     :lines: 158-168
+    :dedent:

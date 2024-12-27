@@ -10,3 +10,4 @@ Select the language you want to use.
     
    c&py.rst
    Pi4j.rst
+   Processing.rst
