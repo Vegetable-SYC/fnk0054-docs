@@ -185,7 +185,7 @@ Click the icon to run the code.
 .. image:: ../_static/imgs/16_74HC595_&_Bar_Graph_LED/Chapter16_13.png
     :align: center
 
-If the code fails to run, please check Geany Configuration.
+If the code fails to run, please check :ref:`Geany Configuration<geany>`.
 
 The following is program code:
 
